@@ -1,9 +1,11 @@
+import sys
+
 enter_leave = {}
 
-n_record = int(input())
+n_record = int(sys.stdin.readline())
 
 for _ in range (n_record):
-    name, record = input().split()
+    name, record = sys.stdin.readline().split()
 
     if record == 'enter':
         enter_leave[name] = record
